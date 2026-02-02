@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/usr/bin/wechat
+firejail /usr/bin/wechat

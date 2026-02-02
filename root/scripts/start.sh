@@ -19,7 +19,7 @@ nohup stalonetray --dockapp-mode simple > /dev/null 2>&1 &
 
 # start WeChat application in the background if exists and auto-start enabled
 if [ "$AUTO_START_WECHAT" = "true" ]; then
-    if [ -f /usr/bin/wechat ]; then nohup /usr/bin/wechat > /dev/null 2>&1 & fi
+    if [ -f /usr/bin/wechat ]; then nohup firejail /usr/bin/wechat > /dev/null 2>&1 & fi
 fi
 
 # start QQ application in the background if exists and auto-start enabled
